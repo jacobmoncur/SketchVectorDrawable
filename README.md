@@ -2,7 +2,7 @@
 
 Exports assets as VectorDrawable for Android. Say goodbye to a bajillion assets.
 
-![screenshot](img/screenshot.png)
+![screenshot](img/screenshot1.png)
 
 Supports [VectorDrawable] as well as [vector-compat].
 
