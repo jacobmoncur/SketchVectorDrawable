@@ -8,7 +8,7 @@ Supports [VectorDrawable] as well as [vector-compat].
 
 ## Installing Plugins
 ### The conventional way:
-1. [Download the ZIP file with the Measure](https://github.com/jacobmoncur/SketchVectorDrawable/master.zip)
+1. [Download the ZIP file with the Measure](https://github.com/jacobmoncur/SketchVectorDrawable/archive/master.zip)
 2. Copy the contents to the plugin folder (Open up Sketch, and go to `Plugins` › `Reveal Plugins Folder…` to open it.)
 
 ### The quickest way:
