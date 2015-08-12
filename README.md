@@ -1,6 +1,6 @@
 # Export Android VectorDrawable
 
-Exports assets as VectorDrawable for Android. Say goodbye to a bajillion assets.
+Exports assets as a VectorDrawable for Android. Say goodbye to a bajillion assets.
 
 ![screenshot](img/screenshot1.png)
 

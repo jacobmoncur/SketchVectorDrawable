@@ -338,6 +338,8 @@ function fixPathPositioning(path) {
 }
 
 function fixNumberFormatting(path) {
+    var regex = new RegExp(/([1-9][0-9]*\.?[0-9]*|\.[0-9]+)([e][+-]?[0-9]*[0-9]+?)/g);
+    path = path.replace(regex, "0")
     return path.replace(/(\.\d+)(\.\d+)\s?/g, "\$1 \$2 ");
 }
 
