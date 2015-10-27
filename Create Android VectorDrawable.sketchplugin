@@ -2,6 +2,7 @@
 //
 // Developer: Jacob Moncur
 @import 'library/main.js'
+@import 'library/sandbox.js'
 
 var home_folder = "/Users/" + NSUserName();
 new AppSandbox().authorize(home_folder, function() {
