@@ -8,7 +8,7 @@ main = {
     layerVisibility: [],
 
 
-    export: function() {
+    export: function(includeVC) {
         this.baseDir = this.getDirFromPrompt();
 
         if (this.baseDir == null) {
@@ -40,7 +40,7 @@ main = {
             this.hideLayers(root, layer);
 
             // Process the slice
-            success = this.processSlice(layer);
+            success = this.processSlice(layer, includeVC);
 
             // Restore layers visibility
             for (var m = 0; m < this.layerVisibility.length; m++) {
@@ -91,7 +91,7 @@ main = {
         }
     },
 
-    processSlice: function(slice) {
+    processSlice: function(slice, includeVC) {
         var sliceName               = [slice name].trim().toLowerCase().replace(/\s/,'_').replace(/-+/g,'_').replace(/[^0-9a-z_]/,'');
         var version                 = this.copyLayerWithFactor(slice, 1.0);
         var absoluteSVGFileName     = this.baseDir + "/" + "android_assets/res" + "/drawable/." + sliceName + ".svg";
@@ -99,7 +99,7 @@ main = {
 
         [doc saveArtboardOrSlice:version toFile:absoluteSVGFileName];
 
-        var vectorDrawable = new Generator().generateVectorDrawable(absoluteSVGFileName);
+        var vectorDrawable = new Generator(includeVC).generateVectorDrawable(absoluteSVGFileName);
         var ok = this.writeTextToFile(vectorDrawable, absoluteAndroidFileName);
         if (ok === false) {
             this.alert("Bummers, something went wrong trying to create the Android VectorDrawable");
