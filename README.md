@@ -6,6 +6,8 @@ Exports assets as a VectorDrawable for Android. Say goodbye to a bajillion asset
 
 Supports [VectorDrawable] as well as [vector-compat].
 
+Added in the option to generate a VectorDrawable without the compat options. 
+
 ## Installing Plugins
 ### The conventional way:
 1. [Download the ZIP file with the Measure](https://github.com/jacobmoncur/SketchVectorDrawable/archive/master.zip)
