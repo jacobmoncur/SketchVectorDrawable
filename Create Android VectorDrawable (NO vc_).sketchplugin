@@ -5,5 +5,5 @@
 
 var home_folder = "/Users/" + NSUserName();
 new AppSandbox().authorize(home_folder, function() {
-    main.export();
+    main.export(false);
 });

@@ -1,0 +1,9 @@
+// (cmd shift ;)
+//
+// Developer: Jacob Moncur
+@import 'library/main.js'
+
+var home_folder = "/Users/" + NSUserName();
+new AppSandbox().authorize(home_folder, function() {
+    main.export(true);
+});
