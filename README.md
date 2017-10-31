@@ -4,7 +4,7 @@ Exports assets as a VectorDrawable for Android. Say goodbye to a bajillion asset
 
 ![screenshot](img/screenshot1.png)
 
-Supports [VectorDrawable] as well as [vector-compat].
+Supports [VectorDrawable], [VectorDrawableCompat] as well as [vector-compat]
 
 Added in the option to generate a VectorDrawable without the compat options. 
 
@@ -37,4 +37,5 @@ _NOTE: If your Mac has not installed GitHub client, You need to install [GitHub 
 [svg2android]:https://github.com/inloop/svg2android
 [sketch-export-assets]:https://github.com/geertwille/sketch-export-assets
 [VectorDrawable]:https://developer.android.com/reference/android/graphics/drawable/VectorDrawable.html
+[VectorDrawableCompat]:https://developer.android.com/guide/topics/graphics/vector-drawable-resources.html#vector-drawables-backward-solution
 [vector-compat]:https://github.com/wnafee/vector-compat
